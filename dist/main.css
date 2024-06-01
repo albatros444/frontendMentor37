@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  /* //position: relative; ///for footer with absolute position --> */
+  position: relative;
 }
 body h1,
 body h2,
@@ -57,6 +57,254 @@ ul {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 160px;
+  z-index: 50;
+  background-color: white;
+}
+.navbar img {
+  height: 18px;
+}
+.navbar .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 445px;
+  font-family: "Karla", sans-serif;
+}
+.navbar .links a {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(273, 4%, 51%);
+}
+.navbar .links button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid hsl(0, 0%, 30%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+}
+
+.hero {
+  position: relative;
+  height: 600px;
+  padding: 105px 160px;
+  background-color: hsl(256, 26%, 20%);
+  margin-bottom: 205px;
+}
+.hero hr {
+  border: 0;
+  height: 1px;
+  width: 155px;
+  margin-left: 0;
+  margin-bottom: 40px;
+  background: white;
+}
+.hero h1 {
+  width: 540px;
+  margin-bottom: 24px;
+  font-family: "DM Serif Display", serif;
+  font-size: 70px;
+  line-height: 1;
+  color: hsl(0, 0%, 98%);
+}
+.hero p {
+  width: 540px;
+  margin-bottom: 30px;
+  font-family: "Karla", sans-serif;
+  line-height: 1.6;
+  color: hsl(0, 0%, 88%);
+}
+.hero button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid hsl(0, 0%, 88%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: hsl(0, 0%, 98%);
+}
+.hero .heroImg {
+  position: absolute;
+  right: 138px;
+  top: 108px;
+}
+.hero .pattern1 {
+  position: absolute;
+  right: 0;
+  bottom: 160px;
+}
+.hero .pattern2 {
+  position: absolute;
+  left: 0;
+  top: 440px;
+}
+
+.weReDifferentSection {
+  padding: 105px 160px 165px;
+}
+.weReDifferentSection hr {
+  border: 0;
+  height: 1px;
+  width: 155px;
+  margin-left: 0;
+  margin-bottom: 40px;
+  background: hsl(258, 10%, 67%);
+}
+.weReDifferentSection h2 {
+  padding-bottom: 100px;
+  font-size: 70px;
+  font-family: "DM Serif Display", serif;
+  color: hsl(256, 26%, 20%);
+}
+.weReDifferentSection .featuresBlock {
+  display: flex;
+  margin-bottom: 150px;
+}
+.weReDifferentSection .featuresBlock .feature {
+  margin-right: 20px;
+}
+.weReDifferentSection .featuresBlock .feature img {
+  margin-bottom: 30px;
+}
+.weReDifferentSection .featuresBlock .feature h3 {
+  margin-bottom: 20px;
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+.weReDifferentSection .featuresBlock .feature p {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  color: hsl(273, 4%, 51%);
+}
+.weReDifferentSection .findOutMore {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1110px;
+  height: 248px;
+  padding: 0 80px;
+  background-color: hsl(256, 26%, 20%);
+}
+.weReDifferentSection .findOutMore h3 {
+  width: 500px;
+  font-family: "DM Serif Display", serif;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+  color: hsl(0, 0%, 98%);
+}
+.weReDifferentSection .findOutMore button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid hsl(0, 0%, 88%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  z-index: 50;
+  color: hsl(0, 0%, 98%);
+}
+.weReDifferentSection .findOutMore:before {
+  content: url(/images/bg-pattern-how-we-work-desktop.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer {
+  position: relative;
+  padding: 75px 160px;
+  background-color: hsl(0, 0%, 98%);
+}
+.footer::before {
+  content: url(/images/bg-pattern-footer-desktop.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid hsl(276, 9%, 79%);
+}
+.footer__top img {
+  z-index: 50;
+}
+.footer__top__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 145px;
+}
+.footer__top__links svg {
+  cursor: pointer;
+  transition: all 0.13s ease-in-out;
+  fill: #837d88;
+}
+.footer__top__links svg:hover {
+  fill: hsl(270, 9%, 17%);
+}
+.footer__bottom {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.footer__bottom__box {
+  width: 285px;
+  z-index: 50;
+}
+.footer__bottom__box p {
+  margin-bottom: 30px;
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: hsl(273, 4%, 51%);
+}
+.footer__bottom__box a {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

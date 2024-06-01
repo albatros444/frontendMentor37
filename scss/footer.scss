@@ -1,0 +1,65 @@
+.footer {
+  position: relative;
+  padding: 75px 160px;
+  background-color: $liGray;
+  &::before {
+    content: url(/images/bg-pattern-footer-desktop.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid hsl(276, 9%, 79%); ///custom
+    img {
+      z-index: 50;
+    }
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 145px;
+      svg {
+        cursor: pointer;
+        transition: all 0.13s ease-in-out;
+        fill: #837d88;
+        &:hover {
+          fill: $drkViolet2;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    &__box {
+      width: 285px;
+      z-index: 50;
+
+      p {
+        margin-bottom: 30px;
+        font-family: $Karla;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $drkGrayViolet;
+      }
+      a {
+        display: block;
+        margin-bottom: 14px;
+        font-family: $Karla;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
