@@ -388,7 +388,7 @@ ul {
     height: 450px;
     margin-bottom: 90px;
     width: auto;
-    background: center/contain url(/images/image-intro-mobile.jpg) no-repeat;
+    background: center/cover url(/images/image-intro-mobile.jpg) no-repeat;
   }
   .background .hero hr {
     display: none;
@@ -442,6 +442,10 @@ ul {
     display: block;
     margin: 60px auto 40px;
   }
+  .background .weReDifferentSection .featuresBlock .feature p {
+    width: 336px;
+    margin: 0 auto;
+  }
   .background .weReDifferentSection .findOutMore {
     display: block;
     width: auto;
@@ -486,6 +490,22 @@ ul {
     width: 100%;
     text-align: center;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .background .hero {
+    background: left 400px url(/images/bg-pattern-intro-left-mobile.svg) no-repeat hsl(256, 26%, 20%);
+  }
+  .background .hero .heroImg {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 500px) {
+  .background .hero {
+    background: left 500px url(/images/bg-pattern-intro-left-mobile.svg) no-repeat hsl(256, 26%, 20%);
+  }
+  .background .hero .heroImg {
+    height: 500px;
   }
 }
 
