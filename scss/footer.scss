@@ -1,6 +1,7 @@
 .footer {
   position: relative;
-  padding: 75px 160px;
+  height: 390px;
+  padding: 65px 165px 35px;
   background: left top url(/images/bg-pattern-footer-desktop.svg) no-repeat
     $liGray;
 
@@ -8,12 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
-    margin-bottom: 45px;
-    border-bottom: 1px solid hsl(276, 9%, 79%); ///custom
-    img {
-      // z-index: 50;
-    }
+    padding-bottom: 32px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid hsl(273, 13%, 86%); ///custom
     &__links {
       display: flex;
       justify-content: space-between;
@@ -31,16 +29,16 @@
   }
   &__bottom {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     &__box {
-      width: 285px;
+      width: 260px;
       p {
-        margin-bottom: 30px;
+        margin-bottom: 33px;
         font-family: $Karla;
         font-size: 14px;
         font-weight: 500;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $drkGrayViolet;
       }
@@ -50,7 +48,7 @@
         font-family: $Karla;
         font-size: 14px;
         font-weight: 500;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
       }
     }

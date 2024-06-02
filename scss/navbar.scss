@@ -1,10 +1,13 @@
+.humburgerMenu {
+  display: none;
+}
 .navbar {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 11.1vw;
+  padding: 0 11.65vw;
   z-index: 50;
   background-color: white;
   img {
@@ -15,22 +18,24 @@
     justify-content: space-between;
     align-items: center;
     width: 445px;
-    font-family: $Karla;
     a {
+      font-family: $Karla;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.06em;
       color: $drkGrayViolet;
     }
     button {
       display: inline-block;
-      padding: 10px 30px;
-      border: 2px solid hsl(0, 0%, 30%);
+      padding: 10px 27px;
+      border: 2px solid hsl(0, 0%, 35%);
       outline: inherit;
       cursor: pointer;
       font-family: inherit;
       letter-spacing: 0.1em;
+      font-family: $Karla;
+
       font-weight: 500;
       text-align: center;
       text-decoration: none;

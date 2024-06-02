@@ -1,31 +1,32 @@
 .hero {
   position: relative;
   height: 600px;
-  padding: 105px 160px;
+  padding: 95px 165px;
   background-color: $drkViolet;
   margin-bottom: 205px;
   .heroImg {
     position: absolute;
     width: 540px;
     height: 650px;
-    right: 138px;
-    top: 108px;
+    right: 164px;
+    top: 104px;
     background-image: url(/images/image-intro-desktop.jpg);
   }
   hr {
     border: 0;
     height: 1px;
-    width: 155px;
+    width: 153px;
     margin-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
     background: white;
   }
   h1 {
-    width: 540px;
-    margin-bottom: 24px;
+    width: 515px;
+    margin-bottom: 30px;
     font-family: $DM;
     font-size: 70px;
-    line-height: 1;
+    font-weight: 500;
+    line-height: 0.9;
     color: $liGray;
   }
   p {
@@ -37,11 +38,12 @@
   }
   button {
     display: inline-block;
-    padding: 10px 30px;
-    border: 2px solid hsl(0, 0%, 88%);
+    padding: 10px 26px;
+    border: 2px solid hsl(0, 0%, 84%);
     outline: inherit;
     cursor: pointer;
     font-family: $Karla;
+    font-size: 14px;
     letter-spacing: 0.1em;
     font-weight: 500;
     text-align: center;
@@ -53,11 +55,11 @@
   .pattern1 {
     position: absolute;
     right: 0;
-    bottom: 160px;
+    bottom: 90px;
   }
   .pattern2 {
     position: absolute;
     left: 0;
-    top: 440px;
+    top: 430px;
   }
 }
