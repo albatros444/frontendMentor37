@@ -2,6 +2,7 @@
 @import "attribution";
 @import "variables";
 @import "navbar";
+@import "humburgerMenu";
 @import "hero";
 @import "weReDifferentSection";
 @import "footer";
@@ -17,3 +18,5 @@
     // display: none;
   }
 }
+
+@import "mediaQs";

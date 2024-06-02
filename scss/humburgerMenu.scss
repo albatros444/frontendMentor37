@@ -1,0 +1,47 @@
+.humburgerMenu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding-top: 40px;
+  z-index: 100;
+  font-family: $Karla;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background-color: $drkViolet2;
+  transform: translate(100%);
+  transition: $trans34;
+  &:before {
+    position: absolute;
+    content: url(/images/bg-pattern-mobile-nav.svg);
+    bottom: 0;
+  }
+  a {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  button {
+    display: block;
+    width: 100%;
+    max-width: 325px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    border: 2px solid hsl(0, 0%, 88%);
+    outline: inherit;
+    cursor: pointer;
+    font-family: $Karla;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    color: $liGray;
+  }
+}

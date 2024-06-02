@@ -1,0 +1,148 @@
+@media screen and (max-width: 500px) {
+  .background {
+    position: relative;
+    overflow-x: hidden;
+    .navbar {
+      padding: 0 24px;
+      .links {
+        display: none;
+      }
+      .humburgerButtons {
+        display: block;
+        position: relative;
+        .humburgerButton {
+          opacity: 1;
+          width: 30px;
+          height: 30px;
+          z-index: 5;
+          transition: $trans54;
+        }
+        .closeButton {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          width: 30px;
+          height: 30px;
+          z-index: -5;
+          transition: $trans54;
+        }
+      }
+    }
+    .hero {
+      height: auto;
+      padding: 0px 0px 90px;
+      margin-bottom: 150px;
+      background: left 450px url(/images/bg-pattern-intro-left-mobile.svg)
+        no-repeat $drkViolet;
+      .heroImg {
+        position: static;
+        height: 450px;
+        margin-bottom: 90px;
+        width: auto;
+        background: center/contain url(/images/image-intro-mobile.jpg) no-repeat;
+      }
+      hr {
+        display: none;
+      }
+      h1 {
+        width: auto;
+        max-width: 350px;
+        font-size: 48px;
+        text-align: center;
+        margin: 0 auto 20px;
+      }
+      p {
+        max-width: 321px;
+        width: auto;
+        margin: 0 auto 35px;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      .pattern1,
+      .pattern2 {
+        display: none;
+      }
+      &:after {
+        position: absolute;
+        bottom: -200px;
+        right: 0;
+        content: url(/images/bg-pattern-intro-right-mobile.svg);
+      }
+    }
+    .weReDifferentSection {
+      padding: 0 0;
+      hr {
+        margin: 0 auto 40px;
+      }
+      h2 {
+        padding-bottom: 30px;
+        font-size: 48px;
+        text-align: center;
+      }
+      .featuresBlock {
+        display: block;
+        .feature {
+          margin: 0 auto;
+          text-align: center;
+          img {
+            display: block;
+            margin: 60px auto 40px;
+          }
+          h3 {
+          }
+        }
+      }
+      .findOutMore {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 60px 40px;
+        margin: 0 24px 140px;
+        background: right url(/images/bg-pattern-how-we-work-mobile.svg)
+          no-repeat $drkViolet;
+        h3 {
+          width: 250px;
+          font-size: 40px;
+          text-align: center;
+          margin: 0 auto 40px;
+          z-index: 50;
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .footer {
+      padding: 80px 0;
+      background: left top url(/images/bg-pattern-footer-mobile.svg) no-repeat
+        $liGray;
+      &__top {
+        display: block;
+        margin: 0 auto;
+        max-width: 325px;
+        padding-bottom: 43px;
+        img {
+          display: block;
+          margin-bottom: 30px;
+          margin: 0 auto 40px;
+        }
+        &__links {
+          margin: 0 auto;
+        }
+      }
+      &__bottom {
+        display: block;
+        &__box {
+          width: 100%;
+          text-align: center;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

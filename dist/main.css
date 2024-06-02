@@ -65,7 +65,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 160px;
+  padding: 0 11.1vw;
   z-index: 50;
   background-color: white;
 }
@@ -100,6 +100,57 @@ ul {
   text-transform: uppercase;
   background: none;
 }
+.navbar .humburgerButtons {
+  display: none;
+}
+
+.humburgerMenu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding-top: 40px;
+  z-index: 100;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background-color: hsl(270, 9%, 17%);
+  transform: translate(100%);
+  transition: all 0.34s ease-in-out;
+}
+.humburgerMenu:before {
+  position: absolute;
+  content: url(/images/bg-pattern-mobile-nav.svg);
+  bottom: 0;
+}
+.humburgerMenu a {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.humburgerMenu button {
+  display: block;
+  width: 100%;
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border: 2px solid hsl(0, 0%, 88%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: hsl(0, 0%, 98%);
+}
 
 .hero {
   position: relative;
@@ -107,6 +158,14 @@ ul {
   padding: 105px 160px;
   background-color: hsl(256, 26%, 20%);
   margin-bottom: 205px;
+}
+.hero .heroImg {
+  position: absolute;
+  width: 540px;
+  height: 650px;
+  right: 138px;
+  top: 108px;
+  background-image: url(/images/image-intro-desktop.jpg);
 }
 .hero hr {
   border: 0;
@@ -145,11 +204,6 @@ ul {
   text-transform: uppercase;
   background: none;
   color: hsl(0, 0%, 98%);
-}
-.hero .heroImg {
-  position: absolute;
-  right: 138px;
-  top: 108px;
 }
 .hero .pattern1 {
   position: absolute;
@@ -210,7 +264,7 @@ ul {
   width: 1110px;
   height: 248px;
   padding: 0 80px;
-  background-color: hsl(256, 26%, 20%);
+  background: right url(/images/bg-pattern-how-we-work-desktop.svg) no-repeat hsl(256, 26%, 20%);
 }
 .weReDifferentSection .findOutMore h3 {
   width: 500px;
@@ -236,23 +290,11 @@ ul {
   z-index: 50;
   color: hsl(0, 0%, 98%);
 }
-.weReDifferentSection .findOutMore:before {
-  content: url(/images/bg-pattern-how-we-work-desktop.svg);
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
 .footer {
   position: relative;
   padding: 75px 160px;
-  background-color: hsl(0, 0%, 98%);
-}
-.footer::before {
-  content: url(/images/bg-pattern-footer-desktop.svg);
-  position: absolute;
-  top: 0;
-  left: 0;
+  background: left top url(/images/bg-pattern-footer-desktop.svg) no-repeat hsl(0, 0%, 98%);
 }
 .footer__top {
   display: flex;
@@ -261,9 +303,6 @@ ul {
   padding-bottom: 30px;
   margin-bottom: 45px;
   border-bottom: 1px solid hsl(276, 9%, 79%);
-}
-.footer__top img {
-  z-index: 50;
 }
 .footer__top__links {
   display: flex;
@@ -286,7 +325,6 @@ ul {
 }
 .footer__bottom__box {
   width: 285px;
-  z-index: 50;
 }
 .footer__bottom__box p {
   margin-bottom: 30px;
@@ -305,6 +343,150 @@ ul {
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .background .navbar {
+    padding: 0 24px;
+  }
+  .background .navbar .links {
+    display: none;
+  }
+  .background .navbar .humburgerButtons {
+    display: block;
+    position: relative;
+  }
+  .background .navbar .humburgerButtons .humburgerButton {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+    transition: all 0.54s ease-in-out;
+  }
+  .background .navbar .humburgerButtons .closeButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    z-index: -5;
+    transition: all 0.54s ease-in-out;
+  }
+  .background .hero {
+    height: auto;
+    padding: 0px 0px 90px;
+    margin-bottom: 150px;
+    background: left 450px url(/images/bg-pattern-intro-left-mobile.svg) no-repeat hsl(256, 26%, 20%);
+  }
+  .background .hero .heroImg {
+    position: static;
+    height: 450px;
+    margin-bottom: 90px;
+    width: auto;
+    background: center/contain url(/images/image-intro-mobile.jpg) no-repeat;
+  }
+  .background .hero hr {
+    display: none;
+  }
+  .background .hero h1 {
+    width: auto;
+    max-width: 350px;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .background .hero p {
+    max-width: 321px;
+    width: auto;
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+  .background .hero button {
+    display: block;
+    margin: 0 auto;
+  }
+  .background .hero .pattern1,
+  .background .hero .pattern2 {
+    display: none;
+  }
+  .background .hero:after {
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    content: url(/images/bg-pattern-intro-right-mobile.svg);
+  }
+  .background .weReDifferentSection {
+    padding: 0 0;
+  }
+  .background .weReDifferentSection hr {
+    margin: 0 auto 40px;
+  }
+  .background .weReDifferentSection h2 {
+    padding-bottom: 30px;
+    font-size: 48px;
+    text-align: center;
+  }
+  .background .weReDifferentSection .featuresBlock {
+    display: block;
+  }
+  .background .weReDifferentSection .featuresBlock .feature {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .background .weReDifferentSection .featuresBlock .feature img {
+    display: block;
+    margin: 60px auto 40px;
+  }
+  .background .weReDifferentSection .findOutMore {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 60px 40px;
+    margin: 0 24px 140px;
+    background: right url(/images/bg-pattern-how-we-work-mobile.svg) no-repeat hsl(256, 26%, 20%);
+  }
+  .background .weReDifferentSection .findOutMore h3 {
+    width: 250px;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto 40px;
+    z-index: 50;
+  }
+  .background .weReDifferentSection .findOutMore button {
+    display: block;
+    margin: 0 auto;
+  }
+  .background .footer {
+    padding: 80px 0;
+    background: left top url(/images/bg-pattern-footer-mobile.svg) no-repeat hsl(0, 0%, 98%);
+  }
+  .background .footer__top {
+    display: block;
+    margin: 0 auto;
+    max-width: 325px;
+    padding-bottom: 43px;
+  }
+  .background .footer__top img {
+    display: block;
+    margin-bottom: 30px;
+    margin: 0 auto 40px;
+  }
+  .background .footer__top__links {
+    margin: 0 auto;
+  }
+  .background .footer__bottom {
+    display: block;
+  }
+  .background .footer__bottom__box {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

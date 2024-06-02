@@ -4,6 +4,14 @@
   padding: 105px 160px;
   background-color: $drkViolet;
   margin-bottom: 205px;
+  .heroImg {
+    position: absolute;
+    width: 540px;
+    height: 650px;
+    right: 138px;
+    top: 108px;
+    background-image: url(/images/image-intro-desktop.jpg);
+  }
   hr {
     border: 0;
     height: 1px;
@@ -41,11 +49,6 @@
     text-transform: uppercase;
     background: none;
     color: $liGray;
-  }
-  .heroImg {
-    position: absolute;
-    right: 138px;
-    top: 108px;
   }
   .pattern1 {
     position: absolute;
