@@ -5,20 +5,16 @@
   left: 0;
   height: calc(100vh - 80px);
   width: 100%;
-  padding-top: 40px;
+  padding: 40px 30px;
   z-index: 100;
   font-family: $Karla;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.04em;
-  background-color: $drkViolet2;
+  background: bottom / 100% url(/images/bg-pattern-mobile-nav.svg) no-repeat
+    $drkViolet2;
   transform: translate(100%);
   transition: $trans34;
-  &:before {
-    position: absolute;
-    content: url(/images/bg-pattern-mobile-nav.svg);
-    bottom: 0;
-  }
   a {
     display: block;
     margin-bottom: 30px;

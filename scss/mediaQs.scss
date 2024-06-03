@@ -1,34 +1,20 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .background {
     position: relative;
     overflow-x: hidden;
-    .humburgerMenu {
-      display: block;
-    }
     .navbar {
-      padding: 0 24px;
-      .links {
-        display: none;
+      padding: 0 30px;
+      img {
+        height: 14px;
       }
-      .humburgerButtons {
-        display: block;
-        position: relative;
-        .humburgerButton {
-          opacity: 1;
-          width: 30px;
-          height: 30px;
-          z-index: 5;
-          transition: $trans54;
+      .links {
+        width: 345px;
+        a {
+          font-size: 13px;
+          letter-spacing: 0;
         }
-        .closeButton {
-          position: absolute;
-          top: 0;
-          left: 0;
-          opacity: 0;
-          width: 30px;
-          height: 30px;
-          z-index: -5;
-          transition: $trans54;
+        button {
+          padding: 8px 15px;
         }
       }
     }
@@ -36,11 +22,11 @@
       height: auto;
       padding: 0px 0px 90px;
       margin-bottom: 150px;
-      background: left 450px url(/images/bg-pattern-intro-left-mobile.svg)
+      background: left 120.43vw url(/images/bg-pattern-intro-left-mobile.svg)
         no-repeat $drkViolet;
       .heroImg {
         position: static;
-        height: 450px;
+        height: 120.43vw; //450px;
         margin-bottom: 90px;
         width: auto;
         background: center / cover url(/images/image-intro-mobile.jpg) no-repeat;
@@ -51,9 +37,10 @@
       h1 {
         width: auto;
         max-width: 350px;
+        margin: 0 auto 20px;
+        padding: 0 5px;
         font-size: 48px;
         text-align: center;
-        margin: 0 auto 20px;
       }
       p {
         max-width: 321px;
@@ -112,7 +99,8 @@
         background: right url(/images/bg-pattern-how-we-work-mobile.svg)
           no-repeat $drkViolet;
         h3 {
-          width: 250px;
+          width: 100%;
+          max-width: 250px;
           font-size: 40px;
           text-align: center;
           margin: 0 auto 40px;
@@ -155,7 +143,7 @@
   }
 }
 
-///mediaQs for hero img//
+///mediaQs for hero img in mobile//
 @media screen and (max-width: 345px) {
   .background {
     .hero {
@@ -164,16 +152,78 @@
       .heroImg {
         height: 400px;
       }
+      p {
+        padding: 0 10px;
+      }
+    }
+    .weReDifferentSection {
+      h2 {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .featuresBlock {
+        .feature {
+          width: 100%;
+          padding: 0 15px;
+          p {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }
-@media screen and (min-width: 430px) and (max-width: 500px) {
+@media screen and (min-width: 520px) and (max-width: 900px) {
   .background {
     .hero {
-      background: left 500px url(/images/bg-pattern-intro-left-mobile.svg)
-        no-repeat $drkViolet;
+      background: $drkViolet;
       .heroImg {
-        height: 500px;
+        height: 625px;
+        width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pattern2 {
+        display: block;
+      }
+      .pattern1 {
+        display: block;
+        top: 0;
+        height: 57.3vw; // 350px;
+      }
+    }
+  }
+}
+
+///for navbar//////////
+@media screen and (max-width: 520px) {
+  .humburgerMenu {
+    display: block;
+  }
+  .navbar {
+    padding: 0 24px;
+    .links {
+      display: none;
+    }
+    .humburgerButtons {
+      display: block;
+      position: relative;
+      .humburgerButton {
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+        z-index: 5;
+        transition: $trans54;
+      }
+      .closeButton {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        z-index: -5;
+        transition: $trans54;
       }
     }
   }

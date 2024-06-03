@@ -1,0 +1,126 @@
+.navbar {
+  height: 5.55vw; //80px;
+  img {
+    height: 1.25vw; //8px;
+  }
+  .links {
+    width: 30.9vw; // 445px;
+    a {
+      font-size: 0.97vw; //14px;
+    }
+    button {
+      padding: 0.69vw 1.87vw; // 10px 27px;
+      font-size: 0.97vw; //14px;
+    }
+  }
+}
+.hero {
+  height: 41.66vw; //600px;
+  padding: 6.6vw 11.46vw; // 95px 165px;
+  margin-bottom: 14.23vw; //205px;
+  .heroImg {
+    width: 37.5vw; //540px;
+    height: 45.13vw; //650px;
+    right: 11.39vw; // 164px;
+    top: 7.22vw; // 104px;
+  }
+  hr {
+    width: 10.62vw; // 153px;
+    margin-bottom: 4.51vw; // 65px;
+  }
+  h1 {
+    width: 35.76vw; // 515px;
+    margin-bottom: 2.08vw; // 30px;
+    font-size: 4.86vw; //70px;
+  }
+  p {
+    width: 37.5vw; //540px;
+    margin-bottom: 2.08vw; // 30px;
+    font-size: 1.11vw; // 16px;
+  }
+  button {
+    padding: 0.69vw 1.87vw; // 10px 27px;
+    font-size: 0.97vw; //14px;
+  }
+  .pattern1 {
+    bottom: 6.25vw; // 90px;
+    height: 41.18vw; // 593px;
+  }
+  .pattern2 {
+    top: 29.86vw; // 430px;
+    height: 35vw; //504px
+  }
+}
+.weReDifferentSection {
+  padding: 6.6vw 11.46vw 10.76vw; // 95px 165px 155px;
+  hr {
+    width: 10.76vw; // 155px;
+    margin-bottom: 3.125vw; // 45px;
+  }
+  h2 {
+    padding-bottom: 5.55vw; // 80px;
+    font-size: 4.86vw; // 70px;
+  }
+  .featuresBlock {
+    margin-bottom: 11.11vw; // 160px;
+
+    .feature {
+      width: 24.3vw; // 350px;
+
+      img {
+        height: 5.97vw; //86px
+        margin-bottom: 2.08vw; // 30px;
+      }
+      h3 {
+        margin-bottom: 1.18vw; // 17px;
+        font-size: 1.94vw; // 28px;
+      }
+      p {
+        font-size: 1.11vw; // 16px;
+        padding-right: 0.69vw; // 10px;
+      }
+    }
+  }
+  .findOutMore {
+    width: 77.08vw; // 1110px;
+    height: 17.22vw; // 248px;
+    padding: 0 5.55vw; // 0 80px;
+    background: right/ 30.13vw url(/images/bg-pattern-how-we-work-desktop.svg)
+      no-repeat $drkViolet; //width 434px
+    h3 {
+      width: 33.33vw; // 480px;
+      font-size: 3.82vw; // 55px;
+    }
+    button {
+      padding: 0.69vw 1.53vw; // 10px 22px;
+      font-size: 0.97vw; // 14px;
+    }
+  }
+}
+.footer {
+  height: 27.08vw; // 390px;
+  padding: 4.51vw 11.46vw 2.43vw; // 65px 165px 35px;
+  background: left top/ 36.66vw url(/images/bg-pattern-footer-desktop.svg)
+    no-repeat $liGray; //width: 528px
+  &__top {
+    padding-bottom: 2.22vw; // 32px;
+    margin-bottom: 3.33vw; // 48px;
+    &__links {
+      width: 10.07vw; // 145px;
+    }
+  }
+  &__bottom {
+    &__box {
+      width: 18.05vw; // 260px;
+
+      p {
+        margin-bottom: 2.29vw; // 33px;
+        font-size: 0.97vw; // 14px;
+      }
+      a {
+        margin-bottom: 0.97vw; // 14px;
+        font-size: 0.97vw; // 14px;
+      }
+    }
+  }
+}
