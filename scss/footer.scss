@@ -42,14 +42,32 @@
         text-transform: uppercase;
         color: $drkGrayViolet;
       }
-      a {
+      .blockBox {
         display: block;
-        margin-bottom: 14px;
-        font-family: $Karla;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+        a {
+          display: inline-block;
+          position: relative;
+          margin-bottom: 14px;
+          font-family: $Karla;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 2px;
+            width: 100%;
+            transform: scale(0);
+            height: 1px;
+            background-color: $drkViolet;
+            transition: $trans12;
+          }
+          &:hover:after {
+            transform: scale(1);
+          }
+        }
       }
     }
   }

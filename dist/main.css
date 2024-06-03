@@ -101,6 +101,7 @@ ul {
   text-transform: uppercase;
   background: none;
   color: hsl(0, 0%, 98%);
+  transition: all 0.12s ease-in-out;
 }
 
 .humburgerMenu {
@@ -131,8 +132,13 @@ ul {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
   letter-spacing: 0.06em;
   color: hsl(273, 4%, 51%);
+  transition: all 0.12s ease-in-out;
+}
+.navbar .links a:hover {
+  color: hsl(270, 9%, 17%);
 }
 .navbar .links button {
   display: inline-block;
@@ -148,6 +154,12 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   background: none;
+  transition: all 0.12s ease-in-out;
+}
+.navbar .links button:hover {
+  background-color: hsl(270, 9%, 17%);
+  border: 2px solid hsl(270, 9%, 17%);
+  color: white;
 }
 .navbar .humburgerButtons {
   display: none;
@@ -194,7 +206,8 @@ ul {
 }
 .hero button {
   display: inline-block;
-  padding: 10px 26px;
+  padding: 9px 26px;
+  padding-top: 11px;
   border: 2px solid hsl(0, 0%, 84%);
   outline: inherit;
   cursor: pointer;
@@ -207,6 +220,12 @@ ul {
   text-transform: uppercase;
   background: none;
   color: hsl(0, 0%, 98%);
+  transition: all 0.12s ease-in-out;
+}
+.hero button:hover {
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
 }
 .hero .pattern1 {
   position: absolute;
@@ -298,6 +317,12 @@ ul {
   background: none;
   z-index: 50;
   color: hsl(0, 0%, 98%);
+  transition: all 0.12s ease-in-out;
+}
+.weReDifferentSection .findOutMore button:hover {
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
 }
 
 .footer {
@@ -345,14 +370,32 @@ ul {
   text-transform: uppercase;
   color: hsl(273, 4%, 51%);
 }
-.footer__bottom__box a {
+.footer__bottom__box .blockBox {
   display: block;
+}
+.footer__bottom__box .blockBox a {
+  display: inline-block;
+  position: relative;
   margin-bottom: 14px;
   font-family: "Karla", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.footer__bottom__box .blockBox a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  transform: scale(0);
+  height: 1px;
+  background-color: hsl(256, 26%, 20%);
+  transition: all 0.12s ease-in-out;
+}
+.footer__bottom__box .blockBox a:hover:after {
+  transform: scale(1);
 }
 
 .background {
@@ -369,6 +412,7 @@ ul {
   }
   .background .navbar img {
     height: 14px;
+    cursor: pointer;
   }
   .background .navbar .links {
     width: 345px;
