@@ -2,6 +2,9 @@
   .background {
     position: relative;
     overflow-x: hidden;
+    .humburgerMenu {
+      display: block;
+    }
     .navbar {
       padding: 0 24px;
       .links {

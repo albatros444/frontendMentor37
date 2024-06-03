@@ -60,6 +60,55 @@ ul {
 }
 
 .humburgerMenu {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding-top: 40px;
+  z-index: 100;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  background-color: hsl(270, 9%, 17%);
+  transform: translate(100%);
+  transition: all 0.34s ease-in-out;
+}
+.humburgerMenu:before {
+  position: absolute;
+  content: url(/images/bg-pattern-mobile-nav.svg);
+  bottom: 0;
+}
+.humburgerMenu a {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.humburgerMenu button {
+  display: block;
+  width: 100%;
+  max-width: 325px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border: 2px solid hsl(0, 0%, 88%);
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: hsl(0, 0%, 98%);
+}
+
+.humburgerMenu {
   display: none;
 }
 
@@ -107,54 +156,6 @@ ul {
 }
 .navbar .humburgerButtons {
   display: none;
-}
-
-.humburgerMenu {
-  display: block;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  height: calc(100vh - 80px);
-  width: 100%;
-  padding-top: 40px;
-  z-index: 100;
-  font-family: "Karla", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  background-color: hsl(270, 9%, 17%);
-  transition: all 0.34s ease-in-out;
-}
-.humburgerMenu:before {
-  position: absolute;
-  content: url(/images/bg-pattern-mobile-nav.svg);
-  bottom: 0;
-}
-.humburgerMenu a {
-  display: block;
-  margin-bottom: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-}
-.humburgerMenu button {
-  display: block;
-  width: 100%;
-  max-width: 325px;
-  margin: 0 auto;
-  padding: 15px 30px;
-  border: 2px solid hsl(0, 0%, 88%);
-  outline: inherit;
-  cursor: pointer;
-  font-family: "Karla", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: none;
-  color: hsl(0, 0%, 98%);
 }
 
 .hero {
@@ -359,13 +360,13 @@ ul {
   text-transform: uppercase;
 }
 
-.background {
-  position: relative;
-}
 @media screen and (max-width: 700px) {
   .background {
     position: relative;
     overflow-x: hidden;
+  }
+  .background .humburgerMenu {
+    display: block;
   }
   .background .navbar {
     padding: 0 24px;
