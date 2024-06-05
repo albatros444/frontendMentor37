@@ -3,9 +3,9 @@
     position: relative;
     overflow-x: hidden;
     .navbar {
-      padding: 0 30px;
+      padding: 0 24px;
       img {
-        height: 14px;
+        // height: 14px;
         cursor: pointer;
       }
       .links {
@@ -22,13 +22,13 @@
     .hero {
       height: auto;
       padding: 0px 0px 90px;
-      margin-bottom: 150px;
+      margin-bottom: 140px;
       background: left 120.43vw url(/images/bg-pattern-intro-left-mobile.svg)
         no-repeat $drkViolet;
       .heroImg {
         position: static;
         height: 120.43vw; //450px;
-        margin-bottom: 90px;
+        margin-bottom: 95px;
         width: auto;
         background: center / cover url(/images/image-intro-mobile.jpg) no-repeat;
       }
@@ -38,15 +38,17 @@
       h1 {
         width: auto;
         max-width: 350px;
-        margin: 0 auto 20px;
+        margin: 0 auto 18px;
         padding: 0 5px;
         font-size: 48px;
         text-align: center;
+        line-height: 1;
+        letter-spacing: -0.01em;
       }
       p {
         max-width: 321px;
         width: auto;
-        margin: 0 auto 35px;
+        margin: 0 auto 32px;
         text-align: center;
       }
       button {
@@ -59,7 +61,7 @@
       }
       &:after {
         position: absolute;
-        bottom: -200px;
+        bottom: -180px;
         right: 0;
         content: url(/images/bg-pattern-intro-right-mobile.svg);
       }
@@ -67,23 +69,26 @@
     .weReDifferentSection {
       padding: 0 0;
       hr {
-        margin: 0 auto 40px;
+        margin: 0 auto 30px;
       }
       h2 {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         font-size: 48px;
+        letter-spacing: -0.01em;
         text-align: center;
       }
       .featuresBlock {
         display: block;
+        margin-bottom: 140px;
         .feature {
           margin: 0 auto;
           text-align: center;
           img {
             display: block;
-            margin: 60px auto 40px;
+            margin: 60px auto 30px;
           }
           h3 {
+            color: $drkViolet2;
           }
           p {
             width: 336px;
@@ -95,9 +100,9 @@
         display: block;
         width: auto;
         height: auto;
-        padding: 60px 40px;
+        padding: 72px 40px;
         margin: 0 24px 140px;
-        background: right url(/images/bg-pattern-how-we-work-mobile.svg)
+        background: right top url(/images/bg-pattern-how-we-work-mobile.svg)
           no-repeat $drkViolet;
         h3 {
           width: 100%;
@@ -114,19 +119,18 @@
       }
     }
     .footer {
-      padding: 80px 0;
+      padding: 90px 0 80px;
       height: 1024px;
       background: left top url(/images/bg-pattern-footer-mobile.svg) no-repeat
         $liGray;
       &__top {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 40px;
         max-width: 325px;
-        padding-bottom: 43px;
+        padding-bottom: 42px;
         img {
           display: block;
-          margin-bottom: 30px;
-          margin: 0 auto 40px;
+          margin: 0 auto 33px;
         }
         &__links {
           margin: 0 auto;
@@ -137,7 +141,7 @@
         &__box {
           width: 100%;
           text-align: center;
-          margin-top: 40px;
+          margin-top: 27px;
         }
       }
     }
@@ -197,11 +201,13 @@
 }
 
 ///for navbar//////////
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
   .humburgerMenu {
     display: block;
   }
   .navbar {
+    img {
+    }
     padding: 0 24px;
     .links {
       display: none;
@@ -209,20 +215,21 @@
     .humburgerButtons {
       display: block;
       position: relative;
+      padding-top: 2px;
       .humburgerButton {
         opacity: 1;
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
         z-index: 5;
         transition: $trans54;
       }
       .closeButton {
         position: absolute;
-        top: 0;
+        top: 2;
         left: 0;
         opacity: 0;
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
         z-index: -5;
         transition: $trans54;
       }

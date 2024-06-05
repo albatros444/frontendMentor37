@@ -5,7 +5,7 @@
   left: 0;
   height: calc(100vh - 80px);
   width: 100%;
-  padding: 40px 30px;
+  padding: 50px 20px;
   z-index: 100;
   font-family: $Karla;
   font-size: 20px;
@@ -17,8 +17,9 @@
   transition: $trans34;
   a {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: white;
   }
@@ -26,7 +27,7 @@
     display: block;
     width: 100%;
     max-width: 325px;
-    margin: 0 auto;
+    margin: -10px auto;
     padding: 15px 30px;
     border: 2px solid hsl(0, 0%, 88%);
     outline: inherit;
@@ -34,7 +35,7 @@
     font-family: $Karla;
     font-size: 20px;
     font-weight: 500;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.1em;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;

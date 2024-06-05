@@ -66,7 +66,7 @@ ul {
   left: 0;
   height: calc(100vh - 80px);
   width: 100%;
-  padding: 40px 30px;
+  padding: 50px 20px;
   z-index: 100;
   font-family: "Karla", sans-serif;
   font-size: 20px;
@@ -78,8 +78,9 @@ ul {
 }
 .humburgerMenu a {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: white;
 }
@@ -87,7 +88,7 @@ ul {
   display: block;
   width: 100%;
   max-width: 325px;
-  margin: 0 auto;
+  margin: -10px auto;
   padding: 15px 30px;
   border: 2px solid hsl(0, 0%, 88%);
   outline: inherit;
@@ -95,7 +96,7 @@ ul {
   font-family: "Karla", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -239,7 +240,7 @@ ul {
 }
 
 .weReDifferentSection {
-  padding: 95px 165px 155px;
+  padding: 95px 165px 150px;
 }
 .weReDifferentSection hr {
   border: 0;
@@ -327,7 +328,7 @@ ul {
 
 .footer {
   position: relative;
-  height: 390px;
+  height: 395px;
   padding: 65px 165px 35px;
   background: left top url(/images/bg-pattern-footer-desktop.svg) no-repeat hsl(0, 0%, 98%);
 }
@@ -376,12 +377,13 @@ ul {
 .footer__bottom__box .blockBox a {
   display: inline-block;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   font-family: "Karla", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  font-weight: 600;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: hsl(270, 9%, 17%);
 }
 .footer__bottom__box .blockBox a:after {
   content: "";
@@ -408,10 +410,9 @@ ul {
     overflow-x: hidden;
   }
   .background .navbar {
-    padding: 0 30px;
+    padding: 0 24px;
   }
   .background .navbar img {
-    height: 14px;
     cursor: pointer;
   }
   .background .navbar .links {
@@ -427,13 +428,13 @@ ul {
   .background .hero {
     height: auto;
     padding: 0px 0px 90px;
-    margin-bottom: 150px;
+    margin-bottom: 140px;
     background: left 120.43vw url(/images/bg-pattern-intro-left-mobile.svg) no-repeat hsl(256, 26%, 20%);
   }
   .background .hero .heroImg {
     position: static;
     height: 120.43vw;
-    margin-bottom: 90px;
+    margin-bottom: 95px;
     width: auto;
     background: center/cover url(/images/image-intro-mobile.jpg) no-repeat;
   }
@@ -443,15 +444,17 @@ ul {
   .background .hero h1 {
     width: auto;
     max-width: 350px;
-    margin: 0 auto 20px;
+    margin: 0 auto 18px;
     padding: 0 5px;
     font-size: 48px;
     text-align: center;
+    line-height: 1;
+    letter-spacing: -0.01em;
   }
   .background .hero p {
     max-width: 321px;
     width: auto;
-    margin: 0 auto 35px;
+    margin: 0 auto 32px;
     text-align: center;
   }
   .background .hero button {
@@ -464,7 +467,7 @@ ul {
   }
   .background .hero:after {
     position: absolute;
-    bottom: -200px;
+    bottom: -180px;
     right: 0;
     content: url(/images/bg-pattern-intro-right-mobile.svg);
   }
@@ -472,15 +475,17 @@ ul {
     padding: 0 0;
   }
   .background .weReDifferentSection hr {
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
   }
   .background .weReDifferentSection h2 {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 48px;
+    letter-spacing: -0.01em;
     text-align: center;
   }
   .background .weReDifferentSection .featuresBlock {
     display: block;
+    margin-bottom: 140px;
   }
   .background .weReDifferentSection .featuresBlock .feature {
     margin: 0 auto;
@@ -488,7 +493,10 @@ ul {
   }
   .background .weReDifferentSection .featuresBlock .feature img {
     display: block;
-    margin: 60px auto 40px;
+    margin: 60px auto 30px;
+  }
+  .background .weReDifferentSection .featuresBlock .feature h3 {
+    color: hsl(270, 9%, 17%);
   }
   .background .weReDifferentSection .featuresBlock .feature p {
     width: 336px;
@@ -498,9 +506,9 @@ ul {
     display: block;
     width: auto;
     height: auto;
-    padding: 60px 40px;
+    padding: 72px 40px;
     margin: 0 24px 140px;
-    background: right url(/images/bg-pattern-how-we-work-mobile.svg) no-repeat hsl(256, 26%, 20%);
+    background: right top url(/images/bg-pattern-how-we-work-mobile.svg) no-repeat hsl(256, 26%, 20%);
   }
   .background .weReDifferentSection .findOutMore h3 {
     width: 100%;
@@ -515,20 +523,19 @@ ul {
     margin: 0 auto;
   }
   .background .footer {
-    padding: 80px 0;
+    padding: 90px 0 80px;
     height: 1024px;
     background: left top url(/images/bg-pattern-footer-mobile.svg) no-repeat hsl(0, 0%, 98%);
   }
   .background .footer__top {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     max-width: 325px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
   .background .footer__top img {
     display: block;
-    margin-bottom: 30px;
-    margin: 0 auto 40px;
+    margin: 0 auto 33px;
   }
   .background .footer__top__links {
     margin: 0 auto;
@@ -539,7 +546,7 @@ ul {
   .background .footer__bottom__box {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 27px;
   }
 }
 @media screen and (max-width: 345px) {
@@ -583,7 +590,7 @@ ul {
     height: 57.3vw;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 530px) {
   .humburgerMenu {
     display: block;
   }
@@ -596,43 +603,27 @@ ul {
   .navbar .humburgerButtons {
     display: block;
     position: relative;
+    padding-top: 2px;
   }
   .navbar .humburgerButtons .humburgerButton {
     opacity: 1;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     z-index: 5;
     transition: all 0.54s ease-in-out;
   }
   .navbar .humburgerButtons .closeButton {
     position: absolute;
-    top: 0;
+    top: 2;
     left: 0;
     opacity: 0;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     z-index: -5;
     transition: all 0.54s ease-in-out;
   }
 }
 @media screen and (max-width: 1620px) and (min-width: 901px) {
-  .navbar {
-    padding-left: 11.46vw;
-    padding-right: 9vw;
-  }
-  .hero {
-    padding: 6.6vw 11.46vw;
-    margin-bottom: 7vw;
-  }
-  .hero .heroImg {
-    width: 37.5vw;
-    height: 45.13vw;
-    right: 8vw;
-  }
-  .hero hr {
-    width: 10.62vw;
-    margin-bottom: 4.51vw;
-  }
   .hero h1 {
     width: 35.76vw;
     margin-bottom: 2.08vw;
@@ -649,7 +640,7 @@ ul {
     height: 35vw;
   }
   .weReDifferentSection {
-    padding: 6.6vw 11.46vw 10.76vw;
+    padding: 6.6vw 11.46vw 10.56vw;
   }
   .weReDifferentSection hr {
     width: 10.76vw;
@@ -665,16 +656,8 @@ ul {
   .weReDifferentSection .featuresBlock .feature {
     width: 24.3vw;
   }
-  .weReDifferentSection .featuresBlock .feature img {
-    height: 70px;
-    margin-bottom: 2.08vw;
-  }
   .weReDifferentSection .featuresBlock .feature h3 {
     margin-bottom: 1.18vw;
-  }
-  .weReDifferentSection .featuresBlock .feature p {
-    font-size: 15px;
-    padding-right: 0.69vw;
   }
   .weReDifferentSection .findOutMore {
     width: 77.08vw;
@@ -689,6 +672,33 @@ ul {
   .footer {
     padding: 4.51vw 11.46vw 2.43vw;
     background: left top/36.66vw url(/images/bg-pattern-footer-desktop.svg) no-repeat hsl(0, 0%, 98%);
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 901px) {
+  .navbar {
+    padding-left: 11.6vw;
+    padding-right: 8vw;
+  }
+  .hero {
+    padding: 6.6vw 11.46vw;
+    margin-bottom: 7vw;
+  }
+  .hero .heroImg {
+    width: 37.5vw;
+    height: 45.13vw;
+    right: 8vw;
+  }
+  .hero hr {
+    width: 10.62vw;
+    margin-bottom: 4.51vw;
+  }
+  .weReDifferentSection .featuresBlock .feature img {
+    height: 70px;
+    margin-bottom: 2.08vw;
+  }
+  .weReDifferentSection .featuresBlock .feature p {
+    font-size: 15px;
+    padding-right: 0.69vw;
   }
 }
 
